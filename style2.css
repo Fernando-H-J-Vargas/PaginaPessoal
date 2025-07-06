@@ -130,9 +130,25 @@ footer .whats{
     header img {
         max-width: 90%;
     }
+    .menu {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
     .item {
-        width: 60%;
+        /* width: 60%; */
     }
+    .item h2 {
+    font-size: 1.1rem;
+  }
+
+  .item p {
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
+
+  .preco {
+    font-size: 1rem;
+  }
 
     footer {
         font-size: 0.8rem;
