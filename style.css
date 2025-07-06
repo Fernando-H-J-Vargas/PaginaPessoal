@@ -95,6 +95,10 @@ p {
 .contato a:hover {
     text-decoration: underline;
 }
+.restaurante a{
+    text-decoration: none;
+    color: #fff;
+}
 
 @media (max-width: 480px) {
     .container {
