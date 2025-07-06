@@ -1,0 +1,151 @@
+/* removndo margens e preenchimentos padrão de todos os elementos e difinendo box-sizeing para facilitar no layout*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Estailização geral do corpo da página*/
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #fff7f0;
+    color: #333;
+    line-height: 1.6; /* Altura da linha para melhor leitura */
+}
+/* Cabeçalho */
+header {
+    width: 100%;
+    text-align: center;
+    background: #8b0000;
+    color: white;
+    padding: 20px 0px;
+}
+
+header h1 {
+    display: none;
+    font-size: 2rem;
+}
+
+header img{
+    width: 300px;
+    max-width: 300px;
+    height: auto;
+}
+
+/* layout do menu de itens usando grid responsivo */
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Cria colunas flexíveis que se adaptam ao tamanho da tela */
+    gap: 20px;
+    padding: 30px;
+    max-width: 1000px; /* Largura máxima */
+    margin: auto; /* Centralização horizontal*/
+}
+
+.item {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #ccc; /* Sombra leve */
+    overflow: hidden; /* Esconde partes que saem do container */
+    text-align: center;
+    transition: transform 0.5s; /* Suaviza a transformação ao passar o mouse */
+}
+.item:hover {
+    transform: scale(1.05); /* Aumenta levemente o item */
+}
+
+.item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.item h2 {
+    color: #8b0000;
+    margin:10px 0px 5px 0px;
+    }
+
+.item p {
+    padding: 0 15px; /*Espaçamento Lateral*/
+    font-size: 0.95rem;
+}
+
+.preco {
+    display: block;
+    margin: 15px 0;
+    font-weight: bold;
+    color: #2e8b57;
+    font-size: 1.1rem;
+}
+button {
+    display: block;
+    border-radius: 10px;
+    border: 0px;
+    width: 100px;
+    height: 50px;
+    margin: auto;
+    background: #2fc972;
+    cursor: pointer;
+    transition: 0.9s;
+}
+button:hover {
+    background: #8b0000;
+}
+button: {
+    background: #000000;
+}
+button img{
+    height: 50%;
+}
+/* Rodapé */
+footer {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 15px;
+    background: #eee;
+    font-size: 0.9rem;
+    margin-top: 30px;
+}
+
+footer .whats{
+    width: 32px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+@media (max-width: 480px) {
+    html, body {
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: auto; /* evita barra de rolagem horizontal */
+}
+    header, footer {
+    width: 100vw;
+}
+
+
+    header {
+        padding: 15px 10px;
+    }
+
+    header img {
+        max-width: 90%;
+    }
+    .item {
+        width: 60%;
+    }
+
+    footer {
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+
+    footer a {
+        flex-direction: column;
+        font-size: 0.85rem;
+    }
+
+    footer .whats {
+        
+        margin-bottom: 5px;
+    }
+}
