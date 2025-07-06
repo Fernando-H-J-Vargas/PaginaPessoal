@@ -95,7 +95,6 @@ button {
     border: 0px;
     width: 200px;
     height: 50px;
-    margin: auto;
     background: #2fc972;
     cursor: pointer;
     transition: 0.9s;
@@ -113,7 +112,7 @@ button img {
 .pedir {
     color: white;
     padding: 10px 20px;
-    margin: 10px 0;
+    margin: 10px auto;
 }
 
 /* Rodapé */
@@ -163,7 +162,7 @@ footer .whats {
     }
 
     .item {
-        /* width: 60%; */
+        width: 60%;
     }
 
     .item h2 {
