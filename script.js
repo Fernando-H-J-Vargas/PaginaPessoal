@@ -1,9 +1,3 @@
-// document.querySelectorAll(".habilidades h4").forEach((el, i) => {
-//     const percent = el.textContent.trim();
-//     const barra = document.querySelectorAll(".habilidades .barra")[i];
-//     barra.style.width = percent;
-//   });
-
 // pega todas as tags <h4> dentro de .habilidades
 var textos = document.querySelectorAll(".habilidades h4");
 // pega todas as barras
