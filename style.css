@@ -1,124 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Tomorrow&display=swap');
 * {
     margin: 0;
     padding: 0;
-    box-sizing: boder-box;
+    box-sizing: border-box;
 }
-
-p {
-    color: #ffdeab;
-}
-
-h3 {
-    font-family: "Tomorrow", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    margin: 20px 0px;
-    color: #e3466d;
+a {
+    text-decoration: none;
+    color: white;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: #032f7a;
-    color: #333;
+    width: 100%;
+    height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    flex-wrap: nowrap;
+    background: #ccc;
+    font-family: "Public Sans", sans-serif;
+    font-style: italic;
+    
 }
-
 .container {
+    width: 900px;
+    margin: 0 auto ;
+    display: flex;
+    height: 100%;
+    background-color: white;
+}
+.cabeçalholateral {
+    display: flex;
+    align-items: center;
+    /* height: 100%; */
+    
+}
+header {
+    width: 18rem;
+    height: 100%;
+    padding: 30px;
+    background: #072237;
+    color: white;
     text-align: center;
-    background: #0049c7a4;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 1px 4px 20px rgba(255, 255, 255, 0.829);
-    width: 90%;
-    max-width: 400px;
+    position: relative;
 }
 
-.avatar {
+header .perfil {
+    margin: auto;
+}
+
+header .perfil .icon {
+    margin: 50px 0px;
+    width: 10rem;
+    border: 10px solid #072237 ;
+    box-shadow: 0px 0px 20px rgb(16, 87, 106, 0.9);
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin-bottom: 20px;
-    box-shadow: 0 0 5px #fff;
-    /* Transição suave aplicada aqui */
-    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    transition: 0.5s;
+}
+header .perfil .icon:hover{
+    box-shadow: 0px 0px 20px rgba(44, 209, 255, 0.9);
 }
 
-.avatar:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px #fff;
+.perfil h1 {
+    font-size: 1.8rem;
+    margin-top: 2rem;
 }
 
-h1 {
-
-    font-size: 2rem;
-    color: #d7997b;
+.perfil h2 {
+    font-size: 1rem;
+    color: #ccc;
+    font-weight: 200;
 }
 
-h2 {
-    font-family: 'Tomorrow', sans-serif;
-    font-size: 1.2rem;
-    color: #ffdeab;
-    margin-bottom: 10px;
+.perfil .apresentacao {
+    font-size: 0.99rem;
+    letter-spacing: -0.01rem;
+    font-weight: 200;
+    margin-top: 1.5rem;
+    text-align: justify;
+    color: #ccc;
 }
 
-p {
-    margin: 20px 0;
+.contato {
+    margin-top: 20px;
+    text-align: left;
 }
 
-.habilidade li {
-    display: inline-block;
-    margin: 0px 5%;
+.contato h2 {
+    width: 6.9rem;
+    margin-bottom: 2rem;
+    padding-bottom: 3px;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    border-bottom: 3px solid #10576a;
+    
 }
-
-.habilidade img {
-    width: 50px;
-    object-fit: cover;
-    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+.contato ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0px 0px 0px;
 }
-
-.habilidade img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px #fff;
+.contato li {
+    margin-bottom: 15px;
 }
-
 .contato a {
-    display: block;
-    margin: 8px 0;
-    color: #ffdeab;
-    text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  border-radius: 5px;
+  font-size: .8rem;
 }
 
-.contato a:hover {
-    text-decoration: underline;
-}
-.restaurante a{
-    text-decoration: none;
-    color: #fff;
+.contato a img {
+  width: 1.3rem;
 }
 
-@media (max-width: 480px) {
-    .container {
-        padding: 20px;
-        width: 95%;
-    }
-
-    h1 {
-        font-size: 1.5rem;
-    }
-
-    h2 {
-        font-size: 1rem;
-    }
-
-    p {
-        font-size: 0.9rem;
-    }
-
-    .habilidade img {
-        width: 40px;
-    }
+/* Configuração Nav */
+nav  {
+    width: 30px;
+    height: 100%;
+    padding: 50% 0;
 }
+nav ul {
+    display: grid;
+    justify-content: center;
+    margin: 10px 0;
+} 
+nav li {
+    padding: 5px 20px;
+    background: #10576a;
+    list-style: none;
+    transform: rotate(-90deg);
+    border: 0px solid rgb(255, 255, 255);
+    border-top: 0px;
+    border-radius: 0rem 0rem .8rem .8rem;
+    margin-bottom: 90%; 
+    /* Adiciona espaço entre os itens do menu */
+    width: 100%; /* Define uma largura para melhor controle */
+    text-align: center;     /* Centraliza o texto dentro do 'li' */
+    transition: 0.5s;
+}
+nav li:hover {
+    background: #072237; /* Muda a cor ao passar o mouse */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    box-shadow: 0px 0px 20px rgba(28, 145, 177, 0.9);
+}
+
+/* CONTEUDO */
+.conteudo {
+    width: 800px;
+    left: 409px;
+    padding: 30px 0px 10px 31px;
+    text-align: center;
+    /* border: solid 1px ; */
+}
+
+.conteudo {
+    font-weight: bold;
+    color: #10576a;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    padding-top: 0;
+}
+.conteudo h2{
+    text-align: center;
+    margin: 30px 95px 60px 0px;
+    font-size: 30px;    
+}
+.conteudo h3{
+    color: #072237;
+}
+.conteudo h4{
+    text-transform: uppercase;
+    color: #10576a;
+}
+.conteudo p{
+    color: #000000;
+    margin: 0 0 20px 0;
+    font-weight: 400;
+}
+.conteudo .descri-taref{
+    margin: 0 34px 25px 30px;
+    text-align: justify;
+}
+
+.habilidades .cx {
+    width: 200px;
+    height: 10px;
+    border: 1px solid black;
+}
+.habilidades .barra {
+    height: 100%;
+    width: 0;
+    background-color: #10576a;
+    transition: width 1s ease;
+}
+.habilidades h4 {
+    display: inline-block;
+    margin: 0;
+  }
+
+/* .educacao, 
+.experiencia,
+.habilidades,
+.premiacoes,
+.trabalhos {
+    display: none;
+} */
