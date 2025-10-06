@@ -42,13 +42,13 @@ for (var i = 0; i < links.length; i++) {
       secao.style.display = "block";
     }
   });
-};
+}
 
-document.getElementById("btnDownload").addEventListener("click", () => {
+document.querySelector(".btnDownload").addEventListener("click", () => {
+  
   const link = document.createElement("a");
-  link.href = "document/CV_Fernando_Vargas_2025.pdf"; // nome sem espaços
-  link.download = "CV_Fernando_Vargas_2025.pdf";
-  document.body.appendChild(link);
+  link.href = "document/CV_Fernando_Vargas_2025.pdf";
+link.download = "CV_Fernando_Vargas_2025.pdf";
+
   link.click();
-  document.body.removeChild(link);
 });
