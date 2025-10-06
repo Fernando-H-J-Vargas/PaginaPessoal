@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Tomorrow&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: 0.5s;
 }
+
 a {
     text-decoration: none;
     color: white;
@@ -17,21 +20,42 @@ body {
     background: #ccc;
     font-family: "Public Sans", sans-serif;
     font-style: italic;
-    
+
 }
+.btnDownload {
+    background: #10576a;
+    color: white;
+    border: 0px solid rgb(255, 255, 255);
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 0px;
+}
+
+.btnDownload:hover {
+    background: #072237;
+    /* Muda a cor ao passar o mouse */
+    cursor: pointer;
+    /* Muda o cursor para indicar que é clicável */
+    box-shadow: 0px 0px 20px rgba(28, 145, 177, 0.9);
+}
+
 .container {
     width: 900px;
-    margin: 0 auto ;
+    margin: 0 auto;
     display: flex;
     height: 100%;
     background-color: white;
 }
+
 .cabeçalholateral {
     display: flex;
     align-items: center;
     /* height: 100%; */
-    
+
 }
+
 header {
     width: 18rem;
     height: 100%;
@@ -49,12 +73,13 @@ header .perfil {
 header .perfil .icon {
     margin: 50px 0px;
     width: 10rem;
-    border: 10px solid #072237 ;
+    border: 10px solid #072237;
     box-shadow: 0px 0px 20px rgb(16, 87, 106, 0.9);
     border-radius: 50%;
     transition: 0.5s;
 }
-header .perfil .icon:hover{
+
+header .perfil .icon:hover {
     box-shadow: 0px 0px 20px rgba(44, 209, 255, 0.9);
 }
 
@@ -90,40 +115,45 @@ header .perfil .icon:hover{
     font-size: 1.5rem;
     letter-spacing: 0.2rem;
     border-bottom: 3px solid #10576a;
-    
+
 }
+
 .contato ul {
     list-style: none;
     padding: 0;
     margin: 10px 0px 0px 0px;
 }
+
 .contato li {
     margin-bottom: 15px;
 }
+
 .contato a {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: white;
-  border-radius: 5px;
-  font-size: .8rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    border-radius: 5px;
+    font-size: .8rem;
 }
 
 .contato a img {
-  width: 1.3rem;
+    width: 1.3rem;
 }
 
 /* Configuração Nav */
-nav  {
+nav {
     width: 30px;
     height: 100%;
     padding: 50% 0;
 }
+
 nav ul {
     display: grid;
     justify-content: center;
     margin: 10px 0;
-} 
+}
+
 nav li {
     padding: 5px 20px;
     background: #10576a;
@@ -132,15 +162,20 @@ nav li {
     border: 0px solid rgb(255, 255, 255);
     border-top: 0px;
     border-radius: 0rem 0rem .8rem .8rem;
-    margin-bottom: 90%; 
+    margin-bottom: 90%;
     /* Adiciona espaço entre os itens do menu */
-    width: 100%; /* Define uma largura para melhor controle */
-    text-align: center;     /* Centraliza o texto dentro do 'li' */
-    transition: 0.5s;
+    width: 100%;
+    /* Define uma largura para melhor controle */
+    text-align: center;
+    /* Centraliza o texto dentro do 'li' */
+    /* transition: 0.5s; */
 }
+
 nav li:hover {
-    background: #072237; /* Muda a cor ao passar o mouse */
-    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    background: #072237;
+    /* Muda a cor ao passar o mouse */
+    cursor: pointer;
+    /* Muda o cursor para indicar que é clicável */
     box-shadow: 0px 0px 20px rgba(28, 145, 177, 0.9);
 }
 
@@ -161,24 +196,29 @@ nav li:hover {
     flex-direction: column;
     padding-top: 0;
 }
-.conteudo h2{
+
+.conteudo h2 {
     text-align: center;
     margin: 30px 95px 60px 0px;
-    font-size: 30px;    
+    font-size: 30px;
 }
-.conteudo h3{
+
+.conteudo h3 {
     color: #072237;
 }
-.conteudo h4{
+
+.conteudo h4 {
     text-transform: uppercase;
     color: #10576a;
 }
-.conteudo p{
+
+.conteudo p {
     color: #000000;
     margin: 0 0 20px 0;
     font-weight: 400;
 }
-.conteudo .descri-taref{
+
+.conteudo .descri-taref {
     margin: 0 34px 25px 30px;
     text-align: justify;
 }
@@ -188,16 +228,18 @@ nav li:hover {
     height: 10px;
     border: 1px solid black;
 }
+
 .habilidades .barra {
     height: 100%;
     width: 0;
     background-color: #10576a;
     transition: width 1s ease;
 }
+
 .habilidades h4 {
     display: inline-block;
     margin: 0;
-  }
+}
 
 /* .educacao, 
 .experiencia,
