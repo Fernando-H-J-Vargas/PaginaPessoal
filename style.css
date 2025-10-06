@@ -216,6 +216,8 @@ nav li:hover {
     color: #000000;
     margin: 0 0 20px 0;
     font-weight: 400;
+    padding: 0 20px 0 0;
+    text-align: justify;
 }
 
 .conteudo .descri-taref {
