@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Orbitron", sans-serif;
+    text-decoration: none;
+    list-style: none;
+    transition: .5s;
+}
+
+.container {
+    min-width: 700px;
+    display: flex;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    border: 1px solid #000000;
+    align-content: center;
+    background-color: #043838;
+}
+
+header .btntema {
+    display: flex;
+    align-items: center;
+    border: 3px solid #007979;
+    border-radius: 25px;
+    height: 30px;
+    padding: 10px;
+    color: white;
+}
+
+header .btntema:hover {
+    background-color: #00ffff;
+    cursor: pointer;
+    padding: 15px;
+    color: black;
+}
+
+header nav {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+header nav a {
+    margin: 0 12px;
+    color: #00ffff;
+}
+
+header nav a:hover {
+    font-size: 1.5rem;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+section .calculadora {
+    width: 25rem;
+    height: 35rem;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 10% auto;
+
+}
+
+.calculadora .tela {
+    width: 90%;
+    height: 20%;
+    background: #303030;
+    margin: 10px auto;
+    border: 3px solid yellowgreen;
+    border-radius: 10px;
+}
+
+.calculadora .visor {
+    text-align: right;
+    font-size: 35px;
+    font-family: "Monoton", sans-serif;
+    padding: 5px 10px;
+
+    /* Gradiente no texto */
+    background: linear-gradient(163deg,
+            rgba(255, 0, 51, 1) 0%,
+            rgba(251, 255, 0, 1) 50%,
+            rgba(0, 251, 255, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* (opcional) pra o gradiente se mover levemente */
+    background-size: 200%;
+    animation: moveGradient 5s ease-in-out infinite alternate;
+}
+
+@keyframes moveGradient {
+    from {
+        background-position: left;
+    }
+
+    to {
+        background-position: right;
+    }
+}
+
+
+.calculadora .teclado {
+    height: 73%;
+    width: 90%;
+    background: #076807;
+    margin: 10px auto;
+    border: 3px solid yellowreen;
+    border-radius: 10px;
+    padding: 3px 15px;
+}
+
+.calculadora .teclado ul {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.calculadora .teclado li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+    margin: 5px 5px;
+    background: #757575;
+    border: 3px solid yellowgreen;
+    border-radius: 10px;
+    font-size: 40px;
+    transition: 0.7s;
+}
+
+.calculadora .teclado li:hover {
+    background-color: #043838;
+    color: white;
+}
+
+.calculadora .teclado li:active {
+    background-color: #007979;
+    color: white;
+    transition: 0s;
+}
+
+.calculadora .teclado .operador {
+    background: #00ffff;
+}
+
+.calculadora .teclado .reset {
+    width: 95%;
+    background-color: #eb2b2bec;
+}
