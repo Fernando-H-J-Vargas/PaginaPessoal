@@ -13,7 +13,7 @@ for (var i = 0; i < textos.length; i++) {
 
 // ALTERAÇÃO NO CONTEUDO DE CADA BOTÃO DO MENU VERTICAL
 // pega todos os links do menu
-var links = document.querySelectorAll("nav ul li a");
+var links = document.querySelectorAll("nav ul li .aba");
 // pega todas as seções do conteúdo
 var secoes = document.querySelectorAll(".conteudo > div");
 // primeiro: deixa todas escondidas

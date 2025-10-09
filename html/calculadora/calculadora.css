@@ -10,6 +10,13 @@
     transition: .5s;
 }
 
+body {
+    background-image: url(bg-calc.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 .container {
     min-width: 700px;
     display: flex;
@@ -62,24 +69,29 @@ section {
     display: flex;
     align-items: center;
     flex-direction: column;
+
 }
 
 section .calculadora {
     width: 25rem;
-    height: 35rem;
+    height: 40rem;
     border: 1px solid black;
     border-radius: 20px;
     margin: 10% auto;
-
+    padding-top: 10px;
+    background-color: #007979;
+    box-shadow: 12px 12px 10px 10px black;
 }
 
 .calculadora .tela {
     width: 90%;
     height: 20%;
+    padding: 25px 5px;
     background: #303030;
     margin: 10px auto;
     border: 3px solid yellowgreen;
     border-radius: 10px;
+    box-shadow: 0px 0px 20px #00ffff;
 }
 
 .calculadora .visor {
@@ -93,7 +105,7 @@ section .calculadora {
             rgba(255, 0, 51, 1) 0%,
             rgba(251, 255, 0, 1) 50%,
             rgba(0, 251, 255, 1) 100%);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 
     /* (opcional) pra o gradiente se mover levemente */
@@ -119,7 +131,7 @@ section .calculadora {
     margin: 10px auto;
     border: 3px solid yellowreen;
     border-radius: 10px;
-    padding: 3px 15px;
+    padding: 25px 17px;
 }
 
 .calculadora .teclado ul {
@@ -140,6 +152,7 @@ section .calculadora {
     border: 3px solid yellowgreen;
     border-radius: 10px;
     font-size: 40px;
+    box-shadow: 3px 4px 4px 3px black;
     transition: 0.7s;
 }
 
@@ -151,7 +164,9 @@ section .calculadora {
 .calculadora .teclado li:active {
     background-color: #007979;
     color: white;
-    transition: 0s;
+    transition: 0.5s;
+    box-shadow: inset 3px 4px 4px 3px black;
+
 }
 
 .calculadora .teclado .operador {
@@ -161,4 +176,59 @@ section .calculadora {
 .calculadora .teclado .reset {
     width: 95%;
     background-color: #eb2b2bec;
+}
+
+
+body.darckMode {
+    background-image: url(bg-calc-dark.jpg); /* você pode usar a mesma imagem ou uma versão escura */
+    background-color: #000000;
+    background-size: contain;
+    background-position: center;
+    
+}
+
+/* Cabeçalho escuro */
+body.darckMode header {
+    background-color: #101010;
+    border-color: #00ffff;
+}
+
+body.darckMode header nav a {
+    color: #00ffff;
+}
+
+body.darckMode header .btntema {
+    border-color: #00ffff;
+    color: #00ffff;
+}
+
+body.darckMode header .btntema:hover {
+    background-color: #00ffff;
+    color: black;
+}
+
+/* Corpo da calculadora */
+body.darckMode .calculadora {
+    background-color: #1a1a1a;
+    border: 2px solid #00ffff;
+    box-shadow: 10px 10px 20px #00ffff88;
+}
+
+/* Tela */
+body.darckMode .calculadora .tela {
+    background: #000000;
+    border: 3px solid #00ffff;
+    box-shadow: 0px 0px 25px #00ffff;
+}
+
+/* Texto do visor */
+body.darckMode .calculadora .visor {
+    background: linear-gradient(163deg,
+            rgba(0, 255, 255, 1) 0%,
+            rgba(255, 255, 0, 1) 50%,
+            rgba(255, 0, 255, 1) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200%;
+    animation: moveGradient 6s ease-in-out infinite alternate;
 }
