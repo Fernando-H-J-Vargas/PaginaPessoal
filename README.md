@@ -1,16 +1,17 @@
-# Meu Projeto
+# Meu CV e Portfólio
 
 Descrição breve do que o projeto faz.
 
 ## Como usar
 
-1. Clone o repositório
-2. Instale as dependências
-3. Execute o programa
+1. Clicando na foto você vai para Home.
+2. Clicando nas abas você abre minhas experiencias areas de estudo e etc.
+3. Na aba projetos você sera direcionado a pagina onde encontrara meus projetos.
+4. No botão Baixar CV você baixara meu curriculo vitae
 
 ## Contribuição
 
-Sinta-se à vontade para abrir issues e pull requests.
+Fique a vontade para analisar usar e dar sugestões.
 
 ## Licença
 
