@@ -18,7 +18,7 @@
                 <h2>PORTFOLIO</h2>
             </div>
         </div><!-- c90 -->
-    </header>
+    </header><!-- cabeçalho -->
     <main class="w100">
         <div class="c90">
             <div class="w30 card"><a href="calculadora/calculadora.html">
@@ -61,8 +61,11 @@
         </div>
     </main>
     <footer class="w100">
-
+        <p>  Todos os direitos reservados. <br> Fernando Vargas. <br> &copy;<span id="ano"></span></p> 
     </footer>
+    <script>
+    document.getElementById("ano").textContent = new Date().getFullYear();
+  </script>
 </body>
 
 </html>

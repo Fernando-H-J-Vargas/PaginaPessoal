@@ -116,7 +116,6 @@ main .card {
     border-radius: 25px;
     border: 2px solid #072237;
     transition: 1s;
-
 }
 
 main .card:hover {
@@ -155,23 +154,45 @@ footer {
     height: 10vh;
     background: #072237;
     color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
-
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
     body {
-        background-color: aqua;
+        background-color: rgb(255, 255, 255);
     }
 
+    header {
+        height: 240px;
+    }
+
+    header div {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    header div a {
+        margin: 0;
+    }
+
+    header h2 {
+        margin-top: 10px;
+        text-align: center;
+    }
 }
 
 @media (min-width: 768px) {
 
     /* estilos aplicados até 768px de largura (celulares e tablets) */
     body {
-        background-color: blue;
+        background-color: rgb(255, 255, 255);
     }
+
 }
 
 @media (min-width: 1024px) {
@@ -179,7 +200,15 @@ footer {
     body {
         background-color: brown;
     }
+    header a{
+    position: relative;
 
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0%;
+    }
 }
 
 @media (min-width: 1200px) {

@@ -381,29 +381,27 @@ nav li a:hover {
         flex-direction: row;
         flex-wrap: nowrap;
         align-content: center;
-        align-items: center;,
-        
-    }
+        align-items: center;
 
+    }
     .contato-footer img{
         margin: 0px 19px;
         height: 55%;
     }
-
 }
 
 @media (min-width: 768px) {
 
     /* estilos aplicados até 768px de largura (celulares e tablets) */
     body {
-        background-color: blue;
+        background-color: rgb(255, 255, 255);
     }
 }
 
 @media (min-width: 1024px) {
 
     body {
-        background-color: brown;
+        background-color: rgb(255, 255, 255);
     }
 
 }
@@ -411,7 +409,7 @@ nav li a:hover {
 @media (min-width: 1200px) {
 
     body {
-        background-color: yellow;
+        background-color: rgb(255, 255, 255);
 
     }
 
