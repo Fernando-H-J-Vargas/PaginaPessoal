@@ -262,7 +262,6 @@ nav li a:hover {
 
 @media (max-width: 767px) {
     body {
-        background-color: rgb(255, 255, 255);
         width: 430px;
     }
 
@@ -393,24 +392,17 @@ nav li a:hover {
 @media (min-width: 768px) {
 
     /* estilos aplicados até 768px de largura (celulares e tablets) */
-    body {
-        background-color: rgb(255, 255, 255);
-    }
+    
 }
 
 @media (min-width: 1024px) {
 
-    body {
-        background-color: rgb(255, 255, 255);
-    }
+    
 
 }
 
 @media (min-width: 1200px) {
 
-    body {
-        background-color: rgb(255, 255, 255);
-
-    }
+    
 
 }
