@@ -198,7 +198,7 @@ footer {
 @media (min-width: 1024px) {
 
     body {
-        background-color: brown;
+        background-color: rgb(255, 255, 255);
     }
     header a{
     position: relative;
@@ -214,7 +214,7 @@ footer {
 @media (min-width: 1200px) {
 
     body {
-        background-color: yellow;
+        background-color: rgb(255, 255, 255);
     }
 
 }
