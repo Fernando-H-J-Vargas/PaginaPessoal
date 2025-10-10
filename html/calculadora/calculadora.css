@@ -185,6 +185,9 @@ section .calculadora {
     background-color: #eb2b2bec;
 }
 /* MODO DARK */
+body.darckMode{
+    background-color: #000000;
+}
 body.darckMode header {
     background-color: #101010;
     border-color: #00ffff;
@@ -230,8 +233,8 @@ body.darckMode .calculadora .visor {
 
 @media (max-width: 767px) {
 
-    body {
-        min-width: 373px;
+    body, body .darckMode {
+        min-width: 375px;
     }
     .container{
         width: 100%;
