@@ -392,6 +392,9 @@ nav li a:hover {
 
 @media (min-width: 768px) {
 
+    body{
+        background-color: #ccc;
+    }
     /* estilos aplicados até 768px de largura (celulares e tablets) */
     
 }
