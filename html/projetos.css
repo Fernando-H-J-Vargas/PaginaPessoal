@@ -7,25 +7,38 @@
     transition: 0.5s;
     font-family: "Public Sans", sans-serif;
 }
+
 .c90 {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     align-items: center;
-    width:90%;
+    width: 90%;
     height: 100%;
     margin: 0 auto;
-    
+
 }
-.w20{width: 20%;}
 
-.w30{width: 30%;}
+.w20 {
+    width: 20%;
+}
 
-.w50{width: 50%;}
+.w30 {
+    width: 30%;
+}
 
-.w70{width: 70%;}
+.w50 {
+    width: 50%;
+}
 
-.w100{width: 100%;}
+.w70 {
+    width: 70%;
+}
+
+.w100 {
+    width: 100%;
+}
+
 a {
     text-decoration: none;
 }
@@ -35,6 +48,7 @@ body {
     font-family: "Public Sans", sans-serif;
 
 }
+
 .botao {
     background: #10576a;
     color: white;
@@ -63,11 +77,13 @@ header {
     color: white;
     padding: 12px 60px;
 }
-header .c90{
-    display: flex;    
-    
+
+header .c90 {
+    display: flex;
+
 }
-header .c90 div h2{
+
+header .c90 div h2 {
     align-items: center;
     text-align: center;
 }
@@ -79,33 +95,44 @@ header .icon {
     background-repeat: no-repeat;
     background-size: cover;
     border: 10px solid #072237;
-    box-shadow: 0px 0px 20px rgb(16, 87, 106, 0.9);
+    box-shadow: 0px 0px 20px #10576ae6;
     border-radius: 50%;
     transition: 0.5s;
 }
 
 header .icon:hover {
-    box-shadow: 0px 0px 20px rgba(44, 209, 255, 0.9);
+    box-shadow: 0px 0px 20px #2cd1ffe6;
 }
-header a{
-        margin-top: 40px;
+
+header a {
+    margin-top: 40px;
 }
+
 /* MAIN */
-main .card{
+main .card {
     min-width: 250px;
+    max-width: 250px;
     margin: 5px;
     border-radius: 25px;
     border: 2px solid #072237;
+    transition: 1s;
 
 }
-main .c90{
+
+main .card:hover {
+    box-shadow: 0px 0px 20px #10576a;
+}
+
+main .c90 {
     justify-content: center;
     margin: 0 auto;
-        padding: 50px 0;
+    padding: 50px 0;
 }
+
 .fundo {
-    height: 200px;    
+    height: 200px;
 }
+
 .rodape-card {
     display: flex;
     align-items: center;
@@ -117,15 +144,48 @@ main .c90{
     color: aliceblue;
 }
 
-.calculadora{
+.calculadora {
     border-radius: 20px 20px 0px 0px;
     background-image: url(../img/imgProjetoCalculadora.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-footer{
+footer {
     height: 10vh;
     background: #072237;
     color: white;
+}
+
+
+@media (max-width: 768px) {
+
+    body {
+        background-color: aqua;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    /* estilos aplicados até 768px de largura (celulares e tablets) */
+    body {
+        background-color: blue;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    body {
+        background-color: brown;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    body {
+        background-color: yellow;
+    }
+
 }
